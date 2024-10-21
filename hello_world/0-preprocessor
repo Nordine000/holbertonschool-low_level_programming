@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod  755 main.c | export $CFILE=main.c | tail c
+export CFILE=0-main.c ; ./0-preprocesseur 
