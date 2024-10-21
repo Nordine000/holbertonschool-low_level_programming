@@ -1,16 +1,13 @@
 #include <stdio.h>
 
 /**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 
-* main = test
-
-* imprime le message 
-
-* renvoie 0 si rien ne ce passe
-
-*/
-
-int main(void) {
+int main(void) 
+{
 
 puts "Programming is like building a multilingual puzzle";
 
