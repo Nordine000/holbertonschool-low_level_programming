@@ -6,7 +6,15 @@
  */
 int main(void)
 {
-gcc 6 - size.c - m32 - o size32 2 > / tmp / 32;
-gcc 6 - size.c - m64 - o size64 2 > / tmp / 64;
+int a ; 1
+long int b ; 4
+long long int c ; 4
+char d ; 8
+float f ; 4
+printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(d));
+printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(a));
+printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(b));
+printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(c));
+printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
 return (0);
 }
