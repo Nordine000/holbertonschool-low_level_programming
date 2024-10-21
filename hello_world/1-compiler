@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c "$CFILE" -c c.o
+gcc -c main.c -o mon_programme.o
