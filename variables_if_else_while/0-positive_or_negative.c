@@ -8,15 +8,22 @@
 
 int main(void)
 {
-	int n = -520693284, -48147767, 266853958, 561319348, -199220452, -973398895, 0;
-if (n > 0) {
-	printf("%n is positive\n");
-	}
-else (n = 0){
-	printf("%n is zero\n");
+
+int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+if (n > 0)
+{
+printf("%d is positive\n");
 }
-else if (n < 0) {
-	printf("%n is negative\n");
+else (n == 0)
+{
+printf("%d is zero\n");
 }
-    return (0);
+else if (n < 0)
+{
+printf("%d is negative\n");
+}
+	return (0);
 }
