@@ -8,10 +8,9 @@
 int main(void)
 {
 char c;
-char u;
 for (c = 'A'; c <= 'A'; c++)
 {
-putchar(c);
+putchar((int)c);
 putchar(tolower(c));
 }
 putchar('\n');
