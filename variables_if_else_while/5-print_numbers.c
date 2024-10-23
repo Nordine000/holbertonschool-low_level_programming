@@ -7,10 +7,14 @@
  */
 int main(void)
 {
-for (int num = 0; num < 9; num++)
-{
-putchar(num + '0');
-}
-putchar ('\n');
-return (0);
+	char c;
+
+	c = 0;
+	while (c <= '9')
+	{
+		putchar(c + '0');
+		c++;
+	}
+	putchar ('\n');
+		return (0);
 }
