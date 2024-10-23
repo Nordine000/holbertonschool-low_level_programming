@@ -7,11 +7,13 @@
  */
 int main(void)
 {
-int c = '0';
-while (c <= '9')
-{
-putchar(c + '0');
-c++;
-}
-return (0);
+	char c;
+	c = 0;
+	while (c <= '9')
+	{
+		putchar(c + '0');
+		c++;
+	}
+	putchar ('n\')
+		return (0);
 }
