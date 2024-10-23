@@ -10,7 +10,7 @@ int main(void)
 int c = '0';
 while (c <= '9')
 {
-putchar(c"\n");
+putchar(c);
 c++;
 }
 return (0);
