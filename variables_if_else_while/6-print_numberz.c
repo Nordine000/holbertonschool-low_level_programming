@@ -5,3 +5,15 @@
  *
  * Return: Always 0 (Success)
  */
+int main(void)
+{
+
+        c = 9;
+        while (c <= '9' + '0')
+        {
+                putchar(c + '0');
+                c++;
+        }
+        putchar ('\n');
+                return (0);
+}
