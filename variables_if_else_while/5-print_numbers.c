@@ -8,12 +8,13 @@
 int main(void)
 {
 	char c;
+
 	c = 0;
 	while (c <= '9')
 	{
 		putchar(c + '0');
 		c++;
 	}
-	putchar ('n\')
+	putchar ('\n');
 		return (0);
 }
