@@ -10,7 +10,7 @@ int main(void)
 	char c;
 
 	c = 0;
-	while (c <= '9')
+	while (c <= '9' - '0')
 	{
 		putchar(c + '0');
 		c++;
