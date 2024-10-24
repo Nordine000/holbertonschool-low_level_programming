@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio.h>
 
 /**
  * _putchar - writes the character c to stdout
@@ -9,5 +10,12 @@
  */
 int _putchar(char c)
 {
+	char e[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r', '\0'};
+
+	for (int s = 0; e[s] != '\0'; s++)
+	{
+	putchar(e[s]);
+	}
+	putchar('\n');
 	return (write(1, &c, 1));
 }
