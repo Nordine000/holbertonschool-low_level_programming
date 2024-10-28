@@ -15,7 +15,7 @@ for (j = 0; j <= 9; j++)
 {
 a = i * j;
 
-if (j > 0)
+if (j < 10)
 _putchar(' ');
 _putchar(a + '0');
 if (j < 9)
