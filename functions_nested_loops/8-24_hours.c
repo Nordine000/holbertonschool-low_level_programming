@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
  * jack_bauer- check the code
  *
@@ -7,12 +7,18 @@
  */
 void jack_bauer(void)
 {
-	int h, m;
-for (int h = 0; hour < 24; hour++)
+int heure;
+int minute;
+for (heure = 0; heure < 24; heure++)
 {
-for (int m = 0; minute < 60; minute++)
+for (minute = 0; minute < 60; minute++)
 {
-putchar("%02d : %02d\n", h, m);
+_putchar((minute / 10) + '0');
+_putchar((minute % 10) + '0');
+_putchar(':');
+_putchar((heure / 10) + '0');
+_putchar((heure % 10) + '0');
+_putchar('\n');
 }
 }
 }
