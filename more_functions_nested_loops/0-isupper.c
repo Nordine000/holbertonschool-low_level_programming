@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * _isupper- check the code.
  * @c: identifie et vérifie si la valeur numérique du caractère
@@ -9,15 +8,17 @@
 
 int _isupper(int c)
 {
-if (c >= 'A' && c <= 'A')
+if (c >= 'A' && c <= 'Z')
 {
-_putchar(':');
+putchar(c);
+putchar(':');
 return (1);
 }
 else
 {
-_putchar(':');
+putchar(c);
+putchar(':');
 return (0);
 }
-_putchar('\n');
+putchar('\n');
 }
