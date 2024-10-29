@@ -16,8 +16,8 @@ for (a = 0, b = 0; a <= 10 && b <= 14; a++, b++)
 if (b > 9)
 {
 _putchar('1');
-}
 _putchar((b % 10) + '0');
 }
 _putchar('\n');
+}
 }
