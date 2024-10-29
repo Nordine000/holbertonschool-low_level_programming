@@ -8,16 +8,5 @@
 
 int _isupper(int c)
 {
-if (c >= 'A' && c <= 'Z')
-{
-putchar(c);
-putchar(':');
-return (1);
-}
-else
-{
-putchar(':');
-return (0);
-}
-putchar('\n');
+return (c >= 'A' && c <= 'Z') ? 1 : 0;
 }
