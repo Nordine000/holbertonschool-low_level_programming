@@ -1,16 +1,17 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- * print_numbers- check the code
- *
+ * print_numbers- me sert a imprimer ma liste de nombre entier
  * Return: Always 0.
  */
+
 void print_numbers(void)
 {
-	int a;
+	char a;
+
 for (a = 0; a <= 10; a++)
 {
-	putchar(a + '0');
+_putchar(a + '0');
 }
-	putchar('\n');
+_putchar('\n');
 }
