@@ -12,11 +12,11 @@ int a;
 for (a = 1; a <= 100; a++)
 {
 	printf("%d", a);
-if (a % 3 == 0)
+if (a % 3)
 {
 printf("Fizz");
 }
-if (a % 5 == 0)
+if (a % 5)
 {
 printf("Buzz");
 }
