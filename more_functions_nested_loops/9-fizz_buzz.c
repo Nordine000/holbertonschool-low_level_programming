@@ -11,18 +11,20 @@ int main(void)
 int a;
 for (a = 1; a <= 100; a++)
 {
-	printf("%d", a);
-if (a % 3)
+ if (a % 3 == 0)
 {
 printf("Fizz");
 }
-if (a % 5)
+if (a % 5 == 0)
 {
 printf("Buzz");
 }
 else if (a % 3 == 0 && a % 5 == 0)
 {
 printf("FizzBuzz");
+}
+else {
+printf("%d", a);
 }
 }
 return (0);
