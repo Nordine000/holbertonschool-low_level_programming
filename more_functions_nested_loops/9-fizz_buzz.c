@@ -18,7 +18,7 @@ else if (a % 5 == 0)
 {
 printf("Buzz");
 }
-else if (a % 3 == a && a % 5 == a)
+else if (a % 3 && a % 5)
 {
 printf("FizzBuzz");
 }
