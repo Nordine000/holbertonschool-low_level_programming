@@ -15,7 +15,7 @@ for (a = 1; a <= 100; a++)
 {
 printf("Fizz");
 }
-if (a % 5 == 0)
+else if (a % 5 == 0)
 {
 printf("Buzz");
 }
