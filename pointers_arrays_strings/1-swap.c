@@ -12,10 +12,7 @@
 void swap_int(int *a, int *b)
 {
 
-	int perm;
-*a = 42;
-*b = 98;
-
+int perm;
 perm = *a;
 *a = *b;
 *b = perm;
