@@ -3,20 +3,23 @@
 /**
  * more_numbers - me sert a imprimer des nombres entier
  *
- *
  * Return: Always 0.
  */
 void more_numbers(void)
 {
-int a;
-int b;
+	int i;
+	int j;
 
-for (a = 0; a <= 10; a++)
+for (i = 0; i < 10; i++)
 {
-for (b = 0; b <= 14; (b >= 10))
-? (_putchar('1') _putchar((b % 10) + '0'), b++) :
-_putchar(b++ + '0');
+	for (j = 0; j <= 14; j++)
+	{	
+		if (j >= 10)
+		{ 
+			_putchar('1');
+		}
+	_putchar('0' + j % 10);
+}
 _putchar('\n');
-
 }
 }
