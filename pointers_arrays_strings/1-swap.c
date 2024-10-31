@@ -13,8 +13,8 @@ void swap_int(int *a, int *b)
 {
 
 	int perm;
-*a = 10;
-*b = 20;
+*a = 42;
+*b = 98;
 
 perm = *a;
 *a = *b;
