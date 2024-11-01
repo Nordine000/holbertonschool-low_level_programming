@@ -2,27 +2,22 @@
 #include <stdio.h>
 
 /**
-*print_to_98-Printsallnaturalnumbersfromnto98
-*@n:Thestartingnumber
+*print_to_98- imprime une liste de nombre
+*@n: nombre de depart
 */
 void print_to_98(int n)
 {
-int o;
+	int i;
 
-for (; n <= 98; n++)
+	if (n <= 98)
 {
-if (n >= 10)
+	for (i = n; i < 98; i++)
+	printf("%d, ", i);
+}
+	else
 {
-o = n / 10;
-_putchar(o + '0');
+	for (i = n; i > 98; i--)
+	printf("%d, ", i);
 }
-o = n % 10;
-_putchar(o + '0');
-if (n < 98)
-{
-_putchar(',');
-_putchar(' ');
-}
-}
-_putchar('\n');
+	printf("98\n");
 }
