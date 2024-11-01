@@ -14,7 +14,7 @@ while (*str != '\0')
 {
 if (*str % 2 == 0)
 {
-_putchar(*str);
+_putchar(str[i]);
 i++;
 }
 }
