@@ -23,5 +23,5 @@ while (src[j] != '\0')
 	src++;
 }
 dest[i] = '\0';
-return (0);
+return (dest);
 }
