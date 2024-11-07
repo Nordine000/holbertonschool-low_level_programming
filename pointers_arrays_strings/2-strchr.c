@@ -1,23 +1,29 @@
 #include "main.h"
-
+#include <stddef.h>  /* Inclure pour NULL */
 /**
- * *_strchr- compare un caractere avec toute la chaine
- * @s: chaine de caractere
- * @c: le caractere a comparer
+ * _strchr - Locate a character in a string
+ * @s: Pointer to the string to search
+ * @c: Character to locate in the string
  *
- * Return 0
+ * This function returns a pointer to the first occurrence of the character
+ * `c` in the string `s`. If the character is not found, it returns NULL.
+ *
+ * Return: Pointer to the first occurrence of `c` in `s`, or NULL if not found
  */
-
 char *_strchr(char *s, char c)
 {
-	unsigned int i;
-
-	for (i = 0; s[i] >= '\0'; i++)
+	while (*s)  /* Continue until the null terminator is reached */
 	{
-		if (s[i] == c)
+		if (*s == c)  /* Check if the current character matches `c` */
 		{
-			return (&s[i]);
+			return (s);  /* Return a pointer to the current character */
 		}
+		s++;  /* Move to the next character in the string */
 	}
-	return (0);
+	/* Check for the null terminator */
+	if (*s == c)  /* If we reach the null terminator and it matches `c` */
+	{
+		return (s);  /* Return a pointer to the null terminator if `c` is '\0' */
+	}
+	return (NULL);  /* Return NULL if `c` was not found in the string */
 }
