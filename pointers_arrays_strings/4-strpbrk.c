@@ -10,19 +10,19 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int o;
+	int i, j;
 
-	while (s)
+	for (i = 0; s[i] != '\0' ; i++)
 	{
-		for (o = 0; accept[o] != '\0'; o++)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (*s == accept[o])
+		if (s[i] == accept[j])
 			{
-				return (s);
+			s = s + i;
+			return (s);
 			}
-
 		}
-		s++;
 	}
-	return (0);
+	s = 0;
+	return (s);
 }
