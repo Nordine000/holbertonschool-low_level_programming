@@ -11,7 +11,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int i, p, k, j;
+	unsigned int i, p, k, j, o;
 	char *a;
 
 
@@ -38,7 +38,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		a[k] = s1[k];
 	}
-	for (j = 0; j <= p; k++, j++)
+
+	o = p;
+
+	for (j = 0; j <= o; k++, j++)
 	{
 		a[k] = s2[j];
 	}
