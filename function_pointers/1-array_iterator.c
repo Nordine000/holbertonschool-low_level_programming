@@ -2,30 +2,24 @@
 #include "function_pointers.h"
 
 /**
- * int index- check if a number is equal to 98
- * @cmp: compare
+ * array_iterator- execut func
+ * @action: entier
  * @array: tablo
  * @size: taille
  * Return: 0 if false, something else otherwise.
  */
 
-int int_index(int *array, int size, int (*cmp)(int));
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	if (size <= 0)
-	{
-		return (-1);
-	}
 
-	if  (array == 0 || cmp == 0)
-	{
-		return (-1);
-	}
+	size_t i;
 
-	for  (int i = 0; i < size; i++)
+	if (array == 0 || action == 0)
 	{
-		if (cmp(array[i]) != 0)
-		{
-			return (i);
-		}
-		return (0);
+		return;
 	}
+	for (i = 0; i < size; i++)
+	{
+		action(array[i]);
+	}
+}
