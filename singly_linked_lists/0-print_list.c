@@ -6,7 +6,7 @@
 /**
  * print_list- imprime la liste chainer et le nombre de noeud
  *@h: format
- * Return: Always 0.
+ * Return: nbre de noeud
  */
 
 size_t print_list(const list_t *h)
@@ -24,8 +24,8 @@ size_t print_list(const list_t *h)
 		{
 			printf("[%u] %s\n", h->len, h->str);
 		}
-		h = h->next;
 		nbre++;
+		h = h->next;
 	}
 	return (nbre);
 }
