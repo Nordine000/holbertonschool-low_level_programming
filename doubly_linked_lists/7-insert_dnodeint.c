@@ -4,69 +4,40 @@
 #include "lists.h"
 
 /**
- * *insert_dnodeint_at_index- Entry Point
- * @head: head
- * @index: index
- *
- *
- *
- *
- *
- * Return: head
+ * insert_dnodeint_at_index - ajoute un noeud
+ * @h: depart
+ * @idx: position
+ * @n: noeuddd
+ * Return: NULL
  */
+
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	unsigned int count = 0;
-	dlistint_t *new, *current;
+	dlistint_t *tmp = *h;
+	dlistint_t *new;
+	unsigned int i = 0;
 
-	if (h == NULL)
+	if (idx == 0 || (*h) == NULL)
+		return (add_dnodeint(h, n));
+	while (i < idx - 1)
 	{
-		return (NULL);
-	}
-
-	new = malloc(sizeof(dlistint_t));
-
-	if (new == NULL)
-	{
-		return (NULL);
-	}
-	new->n = n;
-	new->prev = NULL;
-	new->next = NULL;
-
-	if (idx == 0)
-	{
-		new->next = *h;
-		if (*h != NULL)
+		if ((*h)->next == NULL)
+			return (add_dnodeint_end(h, n));
+		i++;
+		tmp = tmp->next;
+		if (i == idx - 1)
 		{
-			(*h)->prev = new; 
-			*h = new; 
-			return (new);
-		}
-		current = *h;
-
-		while (current != NULL && count < idx)
-		{
-			current = current->next;
-			count++;
-		}
-		if (current == NULL && count == idx)
-		{
-			free(new); return (NULL);
-		}
-
-		new->next = current;
-		new->prev = current->prev;
-
-		if (current->prev != NULL)
-		{
-			current->prev->next = new;
-			current->prev = new;
+			new = malloc(sizeof(dlistint_t));
+			if (new == NULL)
+				return (NULL);
+			new->n = n;
+			new->prev = tmp;
+			new->next = tmp->next;
+			tmp->next = new;
+			tmp->next->prev = new;
 		}
 		return (new);
 	}
-
-	free(new);
 	return (NULL);
 }
