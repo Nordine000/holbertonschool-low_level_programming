@@ -3,9 +3,9 @@
 #include "binary_trees.h"
 
 /**
- * print_num - Prints a number
- *
- * @n: Number to be printed
+ * binary_tree_preorder- goes through a binary tree using pre-order traversal and print
+ * @tree: value transmitted to func
+ * @func: call function
  */
 
 
